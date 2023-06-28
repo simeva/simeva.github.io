@@ -1,6 +1,8 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
+layout: single
+title: "Numero Uno"
+header:
+  caption: "First post!"
 ---
 
 # Welcome
