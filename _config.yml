@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "simeva"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Learning 2 Cloud"
 name                     : "Simon Evans"
 description              : "IT Nerdery"
 url                      : https://simeva.github.io
