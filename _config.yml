@@ -108,11 +108,11 @@ author:
   avatar           : "/assets/images/avatar-photo.png"
   bio              : "IT Nerdery"
   location         : "England, UK"
-  email            : "zoobs@duck.com"
+  email            : 
   links:
     - label: "Email"
-      #icon: "fas fa-fw fa-envelope-square"
-      #"mailto:zoobs@duck.com"
+      icon: "fas fa-fw fa-envelope-square"
+      "mailto:zoobs@duck.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
