@@ -43,8 +43,22 @@ bandit0@bandit:~$ cat readme
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 bandit0@bandit:~$`
 ```
-Password for next level spoiler\
-! NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL 
+
+<!DOCTYPE html>
+<head>
+<head>
+    <title>
+         “spoiler” text for Overthewire next level password
+    </title>
+</head>
+<body>
+    <details>
+        <summary>Password for next Level (Spoiler)</summary>
+         NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL 
+    </details>        
+</body>
+</html>
+
 
 
 
