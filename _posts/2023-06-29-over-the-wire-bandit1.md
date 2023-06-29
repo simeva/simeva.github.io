@@ -43,8 +43,6 @@ bandit0@bandit:~$ cat readme
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 bandit0@bandit:~$`
 ```
-
-<!DOCTYPE html>
 <head>
 <head>
     <title>
@@ -57,7 +55,7 @@ bandit0@bandit:~$`
          NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL 
     </details>        
 </body>
-</html>
+
 
 
 
