@@ -1,8 +1,6 @@
 ---
-layout: single
+title: "Posts by Category"
+layout: categories
+permalink: /categories/
 author_profile: true
-title: Categories
-header:
-  overlay_image: 
-permalink: /categories.html
 ---
