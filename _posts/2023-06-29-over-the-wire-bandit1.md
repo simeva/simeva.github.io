@@ -119,6 +119,22 @@ lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 bandit4@bandit:~/inhere$
 ```
 
+### Level 5->6
+
+Task: The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties: human-readable, 1033 bytes in size, not executable.
+
+> By specifying a size test we can easily search for files with an exact file size 
+
+```console
+bandit5@bandit:~$ find -type f -size 1033c
+./inhere/maybehere07/.file2
+bandit5@bandit:~$ cat ./inhere/maybehere07/.file2
+P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+bandit5@bandit:~/inhere$
+```
+
+
+
 
 
 
