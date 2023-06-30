@@ -34,7 +34,9 @@ bandit0@bandit.labs.overthewire.org's password:
 
 Task: The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.\
 
->List the current directory using `ls` and use the `cat` command to read the_ readme _file
+```text
+List the current directory using `ls` and use the `cat` command to read the_ readme _file
+```
 
 ```console
 bandit0@bandit:~$ ls
@@ -78,7 +80,7 @@ Task: The password for the next level is stored in a hidden file in the inhere d
 
 > After navigating to the inhere directory we need to view all files including hidden starting with a `.` Using the `ls -a` option we can do this.
 
-```shell
+```console
 bandit3@bandit:~$ ls
 inhere
 bandit3@bandit:~$ cd inhere/
