@@ -34,7 +34,7 @@ bandit0@bandit.labs.overthewire.org's password:
 
 Task: The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.\
 
->_List the current directory using `ls` and use the `cat` command to read the_ readme _file_
+>List the current directory using `ls` and use the `cat` command to read the_ readme _file
 
 ```console
 bandit0@bandit:~$ ls
@@ -43,21 +43,51 @@ bandit0@bandit:~$ cat readme
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 bandit0@bandit:~$`
 ```
-<head>
-<head>
-    <title>
-         “spoiler” text for Overthewire next level password
-    </title>
-</head>
-<body>
-    <details>
-        <summary>Password for next Level (Spoiler)</summary>
-         NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL 
-    </details>        
-</body>
 
+### Level 1->2
 
+Task: The password for the next level is stored in a file called - located in the home directory\
 
+>To cd into a directory with `a` - as its name we need to alter the string that_ `cat` _sees so it doesn't treat it as a synonym for_ `stdin` _but instead still refers to a file called `-`
+
+```console
+bandit1@bandit:~$ ls
+-
+bandit1@bandit:~$ cat ./-
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+bandit1@bandit:~$
+```
+
+### Level 2->3
+
+Task: The password for the next level is stored in a file called spaces in this filename located in the home directory
+
+>There are a couple of ways to do this but in this example I have used the escape character between the words of the filename. Alternatively we could have used 2 x double quotes " " around the words.
+
+```console
+bandit2@bandit:~$ ls
+spaces in this filename
+bandit2@bandit:~$ cat spaces\ in\ this\ filename
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+bandit2@bandit:~$
+```
+
+### Level 3->4
+
+Task: The password for the next level is stored in a hidden file in the inhere directory.
+
+> After navigating to the inhere directory we need to view all files including hidden starting with a `.` Using the `ls -a` option we can do this.
+
+```shell
+bandit3@bandit:~$ ls
+inhere
+bandit3@bandit:~$ cd inhere/
+bandit3@bandit:~/inhere$ ls -a
+.  ..  .hidden
+bandit3@bandit:~/inhere$ cat .hidden
+2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+bandit3@bandit:~/inhere$
+```
 
 
 
