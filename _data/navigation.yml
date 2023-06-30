@@ -2,8 +2,8 @@
 main:
   - title: "Posts"
     url: https://simeva.github.io/posts.html
-  - title: "Categories"
-    url: https://simeva.github.io/categories.html
+  #- title: "Categories"
+  #  url: https://simeva.github.io/categories.html
   - title: "About"
     url: https://simeva.github.io/about.html
 
