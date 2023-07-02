@@ -150,7 +150,7 @@ bandit6@bandit:~$
 
 Task: The password for the next level is stored in the file data.txt next to the word millionth
 
-> grep is the boss here, we care about the word millionth and nothing else.
+> `grep` is the boss here, we care about the word millionth and nothing else.
 
 ```console
 bandit7@bandit:~$ ls
@@ -159,7 +159,17 @@ bandit7@bandit:~$ cat data.txt | grep millionth
 millionth	TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 bandit7@bandit:~$ 
 ```
+### Level 8->9
 
+Task: The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+
+> Open the file, pipe the contents to the `sort` command and then pipe again to the the `uniq` command to look for unique lines only
+
+```console
+bandit8@bandit:~$ cat data.txt | sort -d | uniq -u
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+bandit8@bandit:~$ 
+```
 
 
 
