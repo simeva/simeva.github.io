@@ -133,6 +133,19 @@ P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 bandit5@bandit:~/inhere$
 ```
 
+### Level 6->7
+
+Task: The password for the next level is stored somewhere on the server and has all of the following properties: owned by user bandit7, owned by group bandit6, 33 bytes in size
+
+> Sending the find results to 2>/dev/null means that stderr (2 - containing error messages from the executed command or script) is redirected (>&) to stdout (1 - the output of the command) and that the latter is being redirected to /dev/null (the null device) 
+
+```console
+bandit6@bandit:~$ find / -user bandit7 -group bandit6 -type f -size 33c 2>/dev/null
+/var/lib/dpkg/info/bandit7.password
+bandit6@bandit:~$
+```
+
+
 
 
 
