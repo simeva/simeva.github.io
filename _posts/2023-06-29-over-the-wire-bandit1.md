@@ -170,6 +170,31 @@ bandit8@bandit:~$ cat data.txt | sort -d | uniq -u
 EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 bandit8@bandit:~$ 
 ```
+### Level 9->10
+
+Task: The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+
+> First use of the strings command here. strings extracts printable characters from files so other commands can use the strings without having to worry about non printable chars.
+
+```console
+bandit9@bandit:~$ strings data.txt | grep =
+4========== the#
+5P=GnFE
+========== password
+'DN9=5
+========== is
+$Z=_
+=TU%
+=^,T,?
+W=y
+q=W
+X=K,
+========== G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+&S=(
+nd?=
+bandit9@bandit:~$
+```
+
 
 
 
