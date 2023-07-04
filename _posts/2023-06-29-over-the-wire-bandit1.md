@@ -174,7 +174,7 @@ bandit8@bandit:~$
 
 Task: The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
 
-> First use of the strings command here. strings extracts printable characters from files so other commands can use the strings without having to worry about non printable chars.
+> First use of the `strings` command here. strings extracts printable characters from files so other commands can use the strings without having to worry about non printable chars.
 
 ```console
 bandit9@bandit:~$ strings data.txt | grep =
@@ -196,7 +196,7 @@ bandit9@bandit:~$
 ```
 ### Level 10>11
 
-Task: The password for the next level is stored in the file data.txt, which contains base64 encoded data
+Task: The password for the next level is stored in the file `data.txt`, which contains `base64` encoded data
 
 > Decoding using base64 command
 
@@ -204,6 +204,17 @@ Task: The password for the next level is stored in the file data.txt, which cont
 bandit10@bandit:~$ base64 data.txt -d
 The password is 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 bandit10@bandit:~$
+```
+### Level 11>12
+
+Task: The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+
+> Using the `tr` command we can translate the data in data.txt using the ROT13 format.
+
+```console
+bandit11@bandit:~$ tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt
+The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+bandit11@bandit:~$
 ```
 
 
