@@ -218,4 +218,6 @@ discord or IRC.
   Enjoy your stay!
 
 bandit14@bandit:~$
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 ```
